@@ -1,1 +1,14 @@
 @import "./reset.css";
+
+.error-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.error-wrapper img {
+  width: 1.5rem;
+}
+.error {
+  color: #ea3323;
+}
