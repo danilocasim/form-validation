@@ -7,8 +7,17 @@
 }
 
 .error-wrapper img {
-  width: 1.5rem;
+  width: 1.1rem;
 }
+
 .error {
-  color: #ea3323;
+  color: red;
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+
+input:user-valid {
+  border: 1px solid green;
 }
