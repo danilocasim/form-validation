@@ -142,9 +142,13 @@ export class Status {
       IconStatus.addErrorIcon("#password-confirmation-icon-status");
       errorPasswordConfirmation.textContent =
         "Please input the password same in password input";
+      passwordConfirmation.setCustomValidity(
+        "Please input the password same in password input",
+      );
     } else {
       IconStatus.addSuccessIcon("#password-confirmation-icon-status");
       errorPasswordConfirmation.textContent = "";
+      passwordConfirmation.setCustomValidity("");
     }
   }
 }
