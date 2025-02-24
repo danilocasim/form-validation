@@ -25,13 +25,12 @@
       <div>
         <label for="country">Country:</label>
         <select name="country" id="country" required>
-          <option value="">Select a Country</option>
           <option value="philippines">Philippines</option>
-          <option value="italy">Italy</option>
+          <option value="germany">Germany</option>
           <option value="switzerland">Switzerland</option>
         </select>
         <div class="error-wrapper">
-          <img src="../assets/error.png" alt="error" />
+          <div id="country-icon-status"></div>
           <div class="error" id="error-country"></div>
         </div>
       </div>
@@ -39,7 +38,7 @@
         <label for="postalCode">Postal Code:</label>
         <input type="text" id="postalCode" name="postalCode" required />
         <div class="error-wrapper">
-          <img src="../assets/error.png" alt="error" />
+          <div id="postal-code-icon-status"></div>
           <div class="error" id="error-postal-code"></div>
         </div>
       </div>
@@ -49,11 +48,11 @@
           type="password"
           id="password"
           name="password"
-          minlength="8"
+          pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
           required
         />
         <div class="error-wrapper">
-          <img src="../assets/error.png" alt="error" />
+          <div id="password-icon-status"></div>
           <div class="error" id="error-password"></div>
         </div>
       </div>
@@ -66,8 +65,8 @@
           required
         />
         <div class="error-wrapper">
-          <img src="../assets/error.png" alt="error" />
-          <div class="error" id="error-password-confirm"></div>
+          <div id="password-confirmation-icon-status"></div>
+          <div class="error" id="error-password-confirmation"></div>
         </div>
       </div>
       <button type="submit">Submit</button>
