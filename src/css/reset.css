@@ -28,6 +28,7 @@ textarea,
 select {
   font: inherit;
   display: block;
+  width: 100%;
 }
 
 p,
