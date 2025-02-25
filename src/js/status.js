@@ -49,7 +49,7 @@ export class Status {
     } else if (email.validity.patternMismatch) {
       IconStatus.addErrorIcon("#email-icon-status");
       errorEmail.textContent =
-        "Invalid pattern. Example: casimdanilojr_bscs@plmun.edu.ph or [name]_[program]@plmun.edu.ph";
+        "Invalid pattern. Example: casimdanilojr_bsit@plmun.edu.ph or [name]_[program]@plmun.edu.ph";
     } else if (email.validity.valid) {
       IconStatus.addSuccessIcon("#email-icon-status");
       errorEmail.textContent = "";
